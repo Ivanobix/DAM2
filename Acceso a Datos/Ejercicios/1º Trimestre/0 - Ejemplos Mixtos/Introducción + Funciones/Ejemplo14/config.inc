@@ -1,0 +1,3 @@
+<?php
+	$cadena = "Hola Mundo";
+?>

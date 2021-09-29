@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 27-ene-2021 8:50:37 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="primero.Sucursal" table="sucursal" catalog="practica" optimistic-lock="version">
+        <id name="codSucursal" type="string">
+            <column name="Cod_Sucursal" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="director" type="string">
+            <column name="Director" length="30" not-null="true" />
+        </property>
+        <property name="numTrabajadores" type="int">
+            <column name="Num_Trabajadores" not-null="true" />
+        </property>
+        <property name="direccion" type="string">
+            <column name="Direccion" length="40" not-null="true" />
+        </property>
+        <property name="telefono" type="string">
+            <column name="Telefono" length="9" not-null="true" />
+        </property>
+        <set name="vuelos" table="vuelo" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="Cod_Sucursal" length="10" not-null="true" />
+            </key>
+            <one-to-many class="primero.Vuelo" />
+        </set>
+    </class>
+</hibernate-mapping>

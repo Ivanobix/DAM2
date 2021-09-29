@@ -1,0 +1,184 @@
+/* --------------------------General-------------------------- */
+html {
+	font-family: Courier New;
+	font-size: 16px;
+	color: white;
+}
+body {
+	background: linear-gradient(to right, #11003d, black);
+}
+p {
+	color: white;
+	background: linear-gradient(to right, #11003d, black);
+	padding-left: 120px;
+	padding-right: 120px;
+	text-align: justify;
+}
+hr {
+	height: 1px;
+	background: #00fff3;
+	border: none;
+	outline: none;
+	margin: 3em 3em;
+	position: relative;
+}
+.error {
+	margin-right: 500px;
+	font-size: 24px;
+	color: red;
+	border: 1px solid #00fff3;
+}
+
+/* --------------------------Separadores-------------------------- */
+.separador {
+	margin: 2em 2em;
+	display: block;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	font-weight: bold;
+	font-size: 21px;
+	color: #00fff3;
+}
+.separador > span {
+	position: relative;
+	display: inline-block;
+}
+.separador > span:before,.separador > span:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	width: 9999px;
+	height: 1px;
+	background: #00fff3;
+}
+
+.separador > span:before {
+	right: 100%;
+	margin-right: 15px;
+}
+
+.separador > span:after {
+	left: 100%;
+	margin-left: 15px;
+}
+
+/* --------------------------Footer-------------------------- */
+
+footer {
+	color: white;
+	margin-top: 20px;
+	text-align: center;
+	width: 100%;
+	display: block;
+}
+#ContenidoGeneral {
+	text-align: center;
+}
+
+/* --------------------------Index-------------------------- */
+
+.FotoPaisaje {
+	height: 250px;
+}
+video {
+	width: 52vw;
+}
+ul {
+	color: white;
+	background: linear-gradient(to right, #11003d, black);
+	padding-left: 120px;
+	padding-right: 120px;
+	text-align: justify;
+}
+li {
+	margin-left: 50px;
+}
+
+/* --------------------------Reservas-------------------------- */
+#ComprobarFecha, #ComprobarVuelo {
+	margin-top: 10px;
+}
+.CampoDatos {
+	margin-bottom: 20px;
+}
+.clasificacionUnica {
+	margin: auto;
+}
+.clasificacionGrande, .clasificacionPequeña {
+	height: 225px;
+	margin-right: 20px;
+}
+.clasificacionGrande, .clasificacionMedia, .clasificacionPequeña, .clasificacionUnica, .clasificacionUnicaPequeña {
+	width: 350px;
+}
+.clasificacionPequeña, .clasificacionUnica, .clasificacionUnicaPequeña {
+	height: 90px;
+}
+.clasificacionMedia {
+	height: 155px;
+}
+
+/* --------------------------Sucursales-------------------------- */
+.clasificacionUnicaGrande {
+	height: 230px;
+	width: 300px;
+	margin: auto;
+}
+.clasificacionUnicaGrande label {
+	margin-right: 35px;
+}
+.clasificacionUnicaPequeña {
+	margin: auto;
+}
+
+/* --------------------------Vuelos-------------------------- */
+.clasificacionUnicaGigante {
+	height: 365px;
+	width: 325px;
+	margin: auto;
+}
+.clasificacionUnicaGigante label {
+	margin-right: 35px;
+}
+/* --------------------------Formularios-------------------------- */
+form {
+	font-family: inherit;
+	padding-bottom: 25px;
+}
+label {
+	width:100px;
+	display: inline-block;
+}
+input, select, textarea, datalist {
+	border: 1px solid white;
+	border-radius: 5px;
+	width: 150px;
+	box-sizing: border-box;
+	padding: 2px;
+	font-weight: bold;
+	background: linear-gradient(to left, #11003d, #00fff3);	
+}
+textarea {
+	width: 500px;
+	height: 200px;
+}
+fieldset{
+	margin-bottom: 10px;
+	border-color: #00fff3;
+	border-radius: 10px;
+}
+label{
+	text-align:left;
+}
+#BotonesEnviarLimpiar {
+	display: block;
+	margin-top: 20px;
+	text-align: center;
+}
+legend::first-letter {
+	color: #00fff3
+}
+input:invalid {
+    border: 2px solid red;
+}

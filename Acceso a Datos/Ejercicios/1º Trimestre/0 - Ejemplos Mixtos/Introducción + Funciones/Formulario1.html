@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Iván García Prieto"/>
+		<meta name="keywords" content="Ivan;Garcia;Prieto;DAM;San;Andres;"/>
+		<title>Formulario1</title>
+	</head>
+	<body>
+	<FORM METHOD="post" ACTION="mis_datos.php">
+		<input name="edad" type="hidden" value=35>
+		Este formulario se llamará <b>Formulario1.html</b> y redirigirá los datos a un fichero <b>mis_datos.php</b>
+		<br>
+		En tu formulario introducirás un campo oculto de edad con 35 años.
+		<br><br>
+		
+		<label for="Nombre">Tu Nombre </label><input type="text" name="nombre" size="40">
+		<br><br>	
+		
+		<label for="sistema">Tu Sistema Favorito </label><select name="sistema">
+			<option selected value="Linux" > Linux </option>
+			<option value="Windows" > Windows </option>
+			<option value="MacOS" > MacOS </option>
+			<option value="Ninguno" ></option></select>
+		<br><br>	
+
+		<legend>¿Tu sexo?</legend>
+			<blockquote>
+				<label>Hombre</label><input type="radio" name="sexo" checked="checked" value="Hombre"><br/>
+				<label>Mujer</label><input type="radio" name="sexo" value="Mujer">
+			</blockquote>
+			
+		<legend>Aficiones</legend>
+			<textarea cols="40" rows="5" name="aficiones"></textarea>
+		<br><br>
+		
+		<input type="submit" value="Enviar"/>
+		<input type="reset" value="Limpiar"/>
+	</FORM>	
+	</body>
+	<footer></footer>
+</html>

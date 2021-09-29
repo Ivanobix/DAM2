@@ -1,0 +1,1 @@
+La suma de habitantes de México D.F, Barcelona, Buenos Aires, Medellín, Lima, Caracas, Santiago, Antigua, Quito, La Habana es: 5663886 habitantes. De estas ciudades tienen metro: 5 ciudades.

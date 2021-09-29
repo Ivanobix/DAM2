@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 27-ene-2021 8:50:37 by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="primero.Vuelo" table="vuelo" catalog="practica" optimistic-lock="version">
+        <id name="numVuelo" type="int">
+            <column name="Num_Vuelo" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="sucursal" class="primero.Sucursal" fetch="select">
+            <column name="Cod_Sucursal" length="10" not-null="true" />
+        </many-to-one>
+        <property name="fecha" type="date">
+            <column name="Fecha" length="10" not-null="true" />
+        </property>
+        <property name="hora" type="time">
+            <column name="Hora" length="8" not-null="true" />
+        </property>
+        <property name="origen" type="string">
+            <column name="Origen" length="20" not-null="true" />
+        </property>
+        <property name="destino" type="string">
+            <column name="Destino" length="20" not-null="true" />
+        </property>
+        <property name="plazasTotales" type="int">
+            <column name="Plazas_Totales" not-null="true" />
+        </property>
+        <property name="plazasTuristas" type="int">
+            <column name="Plazas_Turistas" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

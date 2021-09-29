@@ -1,0 +1,17 @@
+/* --------------------------Tabla-------------------------- */
+table {
+	margin-top: 50px;
+	margin: 0 auto;
+	width: 100%;
+	font-size: 20px;
+	text-align: center;
+	background: linear-gradient(to left, #11003d, black);
+	color: white;
+	border-collapse: collapse;
+}
+td, th {
+	border: 1px solid  #00fff3;
+}
+th {
+	background-color: black;
+}

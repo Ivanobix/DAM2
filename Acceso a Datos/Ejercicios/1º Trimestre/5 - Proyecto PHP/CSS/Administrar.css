@@ -1,0 +1,183 @@
+/* --------------------------General-------------------------- */
+html {
+	font-family: Courier New;
+	font-size: 16px;
+	color: white;
+}
+body {
+	background: linear-gradient(to right, #11003d, black);
+}
+footer {
+	color: white;
+	margin-bottom: 20px;
+	margin-top:150px;
+	text-align: center;
+	width: 100%;
+	display: block;
+
+}
+hr {
+  height: 1px;
+  background: #00fff3;
+  border: none;
+  outline: none;
+  margin: 3em 3em;
+  position: relative;
+}
+hr:before {
+  content: attr(data-symbol);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background: linear-gradient(to right, #11003d, black);;
+  color: white;
+  padding: 0.5em 3em;
+  transform: translate(-50%, -50%);
+  border: 1px solid #00fff3;
+}
+#ContenidoGeneral {
+	text-align: center;
+}
+
+/* --------------------------Menu-------------------------- */
+.cf:before, .cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
+.menu, .submenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu {			
+  margin: 50px auto;
+  width: 800px;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;	
+}
+.menu > li {
+  background: linear-gradient(to right, #11003d, black);
+  border: 1px solid #00fff3;
+  margin-right: 5px;
+  float: left;
+  position: relative;
+  transform: skewX(25deg);
+}
+.menu a {
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Courier New;
+  font-size: 18px;
+}		
+.menu li:hover {
+  filter: brightness(200%);
+}		
+.menu > li > a {
+  transform: skewX(-25deg);
+  padding: 1em 2em;
+}
+.submenu {
+  position: absolute;
+  width: 200px;
+  left: 50%; margin-left: -100px;
+  transform: skewX(-25deg);
+  transform-origin: left top;
+}
+.submenu li {
+  border: 1px solid #00fff3;
+  background: linear-gradient(to left, #0A0A2A, black);
+  position: relative;
+  overflow: hidden;
+}						
+.submenu > li > a {
+  color: white;
+  padding: 0.2em 0.5em;			
+}
+.submenu > li::after {
+  content: '';
+  position: absolute;
+  top: -125%;
+  height: 100%;
+  width: 100%;			
+  box-shadow: 0 0 50px rgba(0, 0, 0, .9);			
+}		
+.submenu > li:nth-child(odd){
+  transform: skewX(-25deg) translateX(0);
+}
+.submenu > li:nth-child(odd) > a {
+  transform: skewX(25deg);
+}
+.submenu > li:nth-child(odd)::after {
+  right: -50%;
+  transform: skewX(-25deg) rotate(3deg);
+}				
+.submenu > li:nth-child(even){
+  transform: skewX(25deg) translateX(0);
+}
+.submenu > li:nth-child(even) > a {
+  transform: skewX(-25deg);
+}
+.submenu > li:nth-child(even)::after {
+  left: -50%;
+  transform: skewX(25deg) rotate(3deg);
+}
+.submenu, .submenu li {
+  opacity: 0;
+  visibility: hidden;			
+}
+.submenu li {
+  transition: .2s ease transform;
+}
+.menu > li:hover .submenu, .menu > li:hover .submenu li {
+  opacity: 1;
+  visibility: visible;
+}		
+.menu > li:hover .submenu li:nth-child(even){
+  transform: skewX(25deg) translateX(15px);			
+}
+.menu > li:hover .submenu li:nth-child(odd){
+  transform: skewX(-25deg) translateX(-15px);			
+}
+
+/* --------------------------Separadores-------------------------- */
+.separador {
+	margin: 2em 2em;
+	display: block;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	font-weight: bold;
+	font-size: 21px;
+	color: #00fff3;
+}
+.separador > span {
+	position: relative;
+	display: inline-block;
+}
+.separador > span:before,.separador > span:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	width: 9999px;
+	height: 1px;
+	background: #00fff3;
+}
+
+.separador > span:before {
+	right: 100%;
+	margin-right: 15px;
+}
+
+.separador > span:after {
+	left: 100%;
+	margin-left: 15px;
+}
