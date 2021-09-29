@@ -1,0 +1,15 @@
+<?xml version="1.0! encoding="ISO-8859-1" standalone="yes"?>
+<!DOCTYPE nota [
+	<!ELEMENT nota (para*,de, titulo,contenido)>
+	<!ELEMENT para (#PCDATA)>
+	<!ELEMENT de (#PCDATA)>
+	<!ELEMENT titulo (#PCDATA)>
+	<!ELEMENT contenido (#PCDATA)>
+	
+]>
+<nota>
+	<para>Pedro</para>
+	<de>Laura</de>
+	<titulo>Recordatorio</titulo>
+	<contenido>A las 7:00 en la puerta del teatro</contenido>
+</nota>

@@ -1,0 +1,54 @@
+//CORREGIR, NO ESTÁ BIEN
+
+<?xml version="1.0! encoding="ISO-8859-1" standalone="yes"?>
+<!DOCTYPE informe [
+	<!ELEMENT informe (cabecera, contenido)>
+	<!ELEMENT cabecera (titulo, subtitulo, descripcion, fecha)>
+	<!ELEMENT titulo (#PCDATA)>
+	<!ELEMENT subtitulo (#PCDATA)>
+	<!ELEMENT descripcion (#PCDATA)>
+	<!ELEMENT fecha (#PCDATA)>
+	<!ELEMENT contenido (region+)>
+	<!ELEMENT region (trimestres)>
+	<!ELEMENT trimestres (trimestre+)>
+	<!ELEMENT trimestre (EMPTY)>
+	<!ATTLIST trimestre ventas CDATA>
+
+]>
+<informe>
+	<cabecera>
+		<titulo>Ediciones Aranda</titulo>
+		<subtitulo>Informe regional de ventas</subtitulo>
+		<descripcion>Informe de ventas para las regiones Norte,Centro, Sur</descripcion>
+		<fecha>30/12/2009</fecha>
+	</cabecera>
+
+	<contenido>
+		<region nombre="Norte">
+			<trimestres>
+				<trimestre ventas="24000"/>
+				<trimestre ventas="38600"/>
+				<trimestre ventas="NO_INFO"/>
+				<trimestre ventas="NO_INFO"/>
+			</trimestres>
+		</region>
+		
+		<region nombre="Centro">
+			<trimestres>
+				<trimestre ventas="NO_INFO"/>
+				<trimestre ventas="16080"/>
+				<trimestre ventas="25000"/>
+				<trimestre ventas="29000"/>
+			</trimestres>
+		</region>
+		
+		<region nombre="Sur">
+			<trimestres>
+				<trimestre ventas="27000"/>
+				<trimestre ventas="31400"/>
+				<trimestre ventas="40100"/>
+				<trimestre ventas="30000"/>
+			</trimestres>
+		</region>
+	</contenido>
+</informe>

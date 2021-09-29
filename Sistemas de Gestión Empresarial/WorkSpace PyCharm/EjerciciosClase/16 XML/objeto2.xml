@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objeto nombre="Mi Objeto XML">
+    Información del Objeto XML
+    <lista nombre="Elemento Lista 1">dato</lista>
+    <lista nombre="Elemento Lista 2">dato 2</lista>
+</objeto>

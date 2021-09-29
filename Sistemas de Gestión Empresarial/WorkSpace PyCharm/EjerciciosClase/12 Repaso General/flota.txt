@@ -1,0 +1,13 @@
+avion
+Quroseno,Airbus,A380,200,No,200
+
+MOTO
+Gasolina,Yamaha,A3,Moderno,240
+Diesel,Harley,Davinson,Clásico,120
+Eléctrica,Tesla,Model 9,Futurista,500
+
+coche
+Diesel,Audi,A4,4,V-12,Si
+
+CAMION
+Gasolina,Mercedes,B87L9,4,Si,Si

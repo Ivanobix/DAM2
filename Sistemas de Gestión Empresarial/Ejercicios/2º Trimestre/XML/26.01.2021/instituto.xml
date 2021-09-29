@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instituto>
+	<curso>
+		<aula>202</aula>
+		<profesores>
+			<profesor>Roberto Gonzalez</profesor>
+			<profesor>Fernando Valdeon</profesor>
+			<profesor>Marta Garrido</profesor>
+		</profesores>
+		<alumnos>
+			<alumno>Jose Maria Cenador</alumno>
+			<alumno>Susana Calvo</alumno>
+			<alumno>Raquel Molina</alumno>
+			<alumno>Hector Garcia</alumno>
+			<alumno>Ivan Garcia</alumno>
+		</alumnos>	
+	</curso>
+	
+	<curso>
+		<aula>201</aula>
+		<profesores>
+			<profesor>Miguel Bayon</profesor>
+			<profesor>Carmen Perez</profesor>
+			<profesor>Emilio Prieto</profesor>
+		</profesores>
+		<alumnos>
+			<alumno>Jorge Sanchez</alumno>
+			<alumno>Pedro Ampudia</alumno>
+			<alumno>Lucia Briz</alumno>
+			<alumno>David Garcia</alumno>
+			<alumno>Celia Jover</alumno>
+		</alumnos>	
+	</curso>
+</instituto>

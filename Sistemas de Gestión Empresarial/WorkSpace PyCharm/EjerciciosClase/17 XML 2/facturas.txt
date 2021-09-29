@@ -1,0 +1,32 @@
+Tagname: factura
+Número: f999
+Tiene hijos: True
+------------------------------------------------------
+--------DATOS EMPRESA---------
+Tagname: datos_empresa
+Nombre: Equipos Digitales S.L
+Dirección: Av. Valladolid
+Población: Madrid
+Código Postal: 28043
+Provincia: Madrid
+CIF: Q-9876543
+Teléfono: n/a
+--------DATOS CLIENTE---------
+Tagname: datos_cliente
+Número Cliente: c879
+Nombre: Darío, Bueno Gutiérrez
+Dirección de Envío: Av. Oporto nº7 4ºd
+Población: Madrid
+Provincia: Madrid
+--------DATOS FACTURA---------
+Tagname: datos_factura
+Fecha: 12-01-2005
+Línea:
+Referencia: MII93000F/8
+Descuento: MICRO PENTIUM IV 300MHZ FB800
+Cantidad: 1
+Precio: 230
+Importe: 266,80
+Base: 970,00
+Cuota IVA: 155,20
+Total: 1125,20

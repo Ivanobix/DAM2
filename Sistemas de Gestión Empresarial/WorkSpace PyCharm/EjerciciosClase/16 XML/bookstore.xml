@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bookstore name="Libreria Pastor">
+    <book category="COOKING">
+        <title lang="en">Everyday Italian</title>
+        <author>
+            <writer>Giada de Laurentis</writer>
+            <resumer>Pepe Lopez</resumer>
+        </author>
+        <year>2005</year>
+        <price>30.00</price>
+    </book>
+
+    <book category="CHILDREN">
+        <title lang="en">Harry Potter</title>
+        <author>
+            <writer>J K. Rowling</writer>
+            <resumer>Ana Martínez</resumer>
+        </author>
+        <year>2005</year>
+        <price>29.99</price>
+    </book>
+
+    <book category="PROGRAMMING">
+        <title lang="en">Python for All</title>
+        <author>
+            <writer>M.L Jones</writer>
+            <resumer>Delton Jones</resumer>
+        </author>
+        <year>2015</year>
+        <price>39.99</price>
+    </book>
+</bookstore>

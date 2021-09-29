@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e1:ejemplo xmlns:e1="http://www.miweb.com/naipes" xmlns:e2="http://www.miweb.com/restaurante">
+	<e1:carta>
+		<e1:palo>Corazones</e1:palo>
+		<e1:numero>7</e1:numero>
+	</e1:carta>
+	
+	<e2:carta>
+		<e2:carnes>
+			<e2:ternera precio="12.95"/>
+			<e2:solomillo precio="13.60"/>
+		</e2:carnes>
+		
+		<e2:pescados>
+			<e2:lenguado precio="16.20"/>
+			<e2:merluza precio="15.85"/>
+		</e2:pescados>
+	</e2:carta>
+</e1:ejemplo>

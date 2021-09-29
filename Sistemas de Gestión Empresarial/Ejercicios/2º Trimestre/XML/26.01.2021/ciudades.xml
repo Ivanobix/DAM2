@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ciudades>
+	<ciudad>
+		<nombre>Nueva Delhi</nombre>
+		<pais>India</pais>
+		<contiente>Ásia</contiente>
+	</ciudad>
+	
+	<ciudad>
+		<nombre>Lisboa</nombre>
+		<pais>Portugal</pais>
+		<contiente>Europa</contiente>
+	</ciudad>
+	
+	<ciudad>
+		<nombre>El Cairo</nombre>
+		<pais>Egipto</pais>
+		<contiente>África</contiente>
+	</ciudad>
+	
+	<ciudad>
+		<nombre>Madrid</nombre>
+		<pais>España</pais>
+		<contiente>Europa</contiente>
+	</ciudad>
+	
+	<ciudad>
+		<nombre>Toronto</nombre>
+		<pais>Canada</pais>
+		<contiente>América</contiente>
+	</ciudad>
+
+</ciudades>

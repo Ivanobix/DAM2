@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<albumes>
+	<album titulo="Astérix, el galo" fechaPublicacion="1961">
+		<personajes>
+			<personaje especie="humano">Astérix</personaje>
+			<personaje especie="animal">Idéfix</personaje>
+		</personajes>
+		<autores>
+			<dibujante>
+				<nombre>Albert Uderzo</nombre>
+				<fechas nacimiento="1927"/>
+				<pais>Francia</pais>
+			</dibujante>
+			<guionista>
+				<nombre>René Goscinny</nombre>
+				<fechas nacimiento="1926"/>
+				<pais>Francia</pais>
+			</guionista>
+		</autores>
+	</album>
+	<album titulo="Indulto para los Dalton" fechaPublicacion="1965">
+		<personajes>
+			<personaje especie="humano">Lucky Luke</personaje>
+			<personaje especie="animal">Jolly Jumper</personaje>
+			<personaje especie="humano">Averrell Dalton</personaje>
+		</personajes>
+		<autores>
+			<dibujante>
+				<nombre>Maurice de Bévère</nombre>
+				<apodo>Morris</apodo>
+				<fechas nacimiento="1923"/>
+				<pais>Bélgica</pais>
+			</dibujante>
+			<guionista>
+				<nombre>René Goscinny</nombre>
+				<fechas nacimiento="1926"/>
+				<pais>Francia</pais>
+			</guionista>
+		</autores>
+	</album>
+	<album titulo="Obélix y compañía" fechaPublicacion="1976">
+		<personajes>
+			<personaje especie="humano">Astérix</personaje>
+			<personaje especie="animal">Idéfix</personaje>
+			<personaje especie="humano">Cayo Coyuntural</personaje>
+		</personajes>
+		<autores>
+			<dibujante>
+				<nombre>Albert Uderzo</nombre>
+				<fechas nacimiento="1927"/>
+				<pais>Francia</pais>
+			</dibujante>
+			<guionista>
+				<nombre>René Goscinny</nombre>
+				<fechas nacimiento="1926"/>
+				<pais>Francia</pais>
+			</guionista>
+		</autores>
+	</album>
+</albumes>
