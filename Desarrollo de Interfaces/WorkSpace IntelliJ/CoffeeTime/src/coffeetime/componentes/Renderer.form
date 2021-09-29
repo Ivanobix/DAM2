@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="coffeetime.componentes.Renderer">
+  <grid id="d4f0d" binding="renderer" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-12828863"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="216e1" binding="pnOeste" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="West"/>
+        <properties>
+          <background color="-12828863"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="f9331" class="javax.swing.JLabel" binding="lblTituloUno">
+            <constraints/>
+            <properties>
+              <font style="1"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Informacion 1:"/>
+              <verticalAlignment value="0"/>
+              <verticalTextPosition value="0"/>
+            </properties>
+          </component>
+          <component id="f8864" class="javax.swing.JLabel" binding="lblInfoUno">
+            <constraints/>
+            <properties>
+              <font/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="1234567890"/>
+              <verticalAlignment value="0"/>
+              <verticalTextPosition value="0"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="f7f76" binding="pnEste" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="East"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="eb04f" class="javax.swing.JLabel" binding="lblTituloDos">
+            <constraints/>
+            <properties>
+              <font style="1"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Informacion 2:"/>
+              <verticalAlignment value="0"/>
+              <verticalTextPosition value="0"/>
+            </properties>
+          </component>
+          <component id="90926" class="javax.swing.JLabel" binding="lblInfoDos">
+            <constraints/>
+            <properties>
+              <font/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="1234567890"/>
+              <verticalAlignment value="0"/>
+              <verticalTextPosition value="0"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="31751" binding="pnNorte" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="2c5c0" class="javax.swing.JLabel" binding="lblIdentificador">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <font style="1"/>
+              <horizontalAlignment value="0"/>
+              <text value="0123456789"/>
+            </properties>
+          </component>
+          <component id="3caaf" class="javax.swing.JSeparator" binding="separadorSuperior">
+            <constraints border-constraint="North"/>
+            <properties>
+              <foreground color="-1"/>
+              <preferredSize width="0" height="10"/>
+            </properties>
+          </component>
+          <vspacer id="2b82e">
+            <constraints border-constraint="South"/>
+          </vspacer>
+        </children>
+      </grid>
+      <component id="5a1dc" class="javax.swing.JSeparator" binding="separadorInferior">
+        <constraints border-constraint="South"/>
+        <properties>
+          <background color="-12828863"/>
+          <foreground color="-1"/>
+          <preferredSize width="0" height="10"/>
+        </properties>
+      </component>
+      <grid id="9d1ce" binding="pnCentral" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children/>
+      </grid>
+    </children>
+  </grid>
+</form>

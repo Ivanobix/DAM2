@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="coffeetime.gui.gestion.GestionCafes">
+  <grid id="cbd77" binding="contentPane" layout-manager="GridLayoutManager" row-count="7" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="48" y="54" width="486" height="355"/>
+    </constraints>
+    <properties>
+      <preferredSize width="600" height="350"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="f6ac2" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font style="1"/>
+          <text resource-bundle="idioma" key="general.nombre"/>
+        </properties>
+      </component>
+      <component id="db0ca" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font style="1"/>
+          <text resource-bundle="idioma" key="general.arabico"/>
+        </properties>
+      </component>
+      <component id="b1ee2" class="javax.swing.JTextField" binding="txtNombre">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="20"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="50d7f" class="javax.swing.JTextField" binding="txtArabico">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="20"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="53023" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font style="1"/>
+          <text resource-bundle="idioma" key="general.robusta"/>
+        </properties>
+      </component>
+      <component id="aab07" class="javax.swing.JTextField" binding="txtRobusta">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="20"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="932f8" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font style="1"/>
+          <text resource-bundle="idioma" key="general.imagenPromocional"/>
+        </properties>
+      </component>
+      <component id="c7185" class="javax.swing.JLabel" binding="imgPromocional">
+        <constraints>
+          <grid row="5" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="cc484" class="javax.swing.JTextField" binding="txtRutaImagen">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="20"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="31a42" class="javax.swing.JButton" binding="btnSeleccionarImagen">
+        <constraints>
+          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="20"/>
+          </grid>
+        </constraints>
+        <properties>
+          <actionCommand value="btnSeleccionar"/>
+          <icon value="gestion/seleccionImagen.png"/>
+          <text value=""/>
+          <toolTipText resource-bundle="idioma" key="seleccionar.Imagen"/>
+        </properties>
+      </component>
+      <grid id="8d320" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="2">
+        <constraints>
+          <grid row="5" column="1" row-span="2" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="b3338" class="javax.swing.JButton" binding="btnGestionar">
+            <constraints/>
+            <properties>
+              <actionCommand value="btnGestionar"/>
+              <icon value="general/aceptar.png"/>
+              <text value=""/>
+              <toolTipText resource-bundle="idioma" key="general.aceptar"/>
+            </properties>
+          </component>
+          <component id="5f9d" class="javax.swing.JButton" binding="btnCancelar">
+            <constraints/>
+            <properties>
+              <actionCommand value="btnCancelar"/>
+              <icon value="general/cancelar.png"/>
+              <text value=""/>
+              <toolTipText resource-bundle="idioma" key="general.cancelar"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="4ff07" class="javax.swing.JLabel" binding="lblLotes">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font style="1"/>
+          <text resource-bundle="idioma" key="general.lote"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="702f0" class="javax.swing.JButton" binding="btnAsignarLotesACafe">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <actionCommand value="btnAsignarLotesACafe"/>
+          <icon value="visualizado/ir.png"/>
+          <text value=""/>
+          <toolTipText resource-bundle="idioma" key="asignar.Lote"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

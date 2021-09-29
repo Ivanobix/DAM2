@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="coffeetime.gui.otros.Preferencias">
+  <grid id="cbd77" binding="contentPane" layout-manager="GridLayoutManager" row-count="3" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="48" y="54" width="504" height="297"/>
+    </constraints>
+    <properties>
+      <preferredSize width="550" height="200"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="a2f40" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="2"/>
+          <horizontalTextPosition value="2"/>
+          <text resource-bundle="idioma" key="preferencias.fuente"/>
+        </properties>
+      </component>
+      <component id="36e02" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="2"/>
+          <horizontalTextPosition value="2"/>
+          <text resource-bundle="idioma" key="preferencias.idioma"/>
+        </properties>
+      </component>
+      <component id="3079e" class="javax.swing.JSpinner" binding="spinFuente">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="50" height="25"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <grid id="96623" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints>
+          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="86eee" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <icon value="preferencias/tema_claro.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="34ded" class="javax.swing.JRadioButton" binding="rbTemaClaro">
+            <constraints/>
+            <properties>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="60595" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <icon value="preferencias/tema_oscuro.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="8b944" class="javax.swing.JRadioButton" binding="rbTemaOscuro">
+            <constraints/>
+            <properties>
+              <selected value="true"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="b79c" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="2"/>
+          <horizontalTextPosition value="2"/>
+          <text resource-bundle="idioma" key="preferencias.tema"/>
+        </properties>
+      </component>
+      <component id="b9253" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="0" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="5" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <orientation value="1"/>
+        </properties>
+      </component>
+      <component id="abd39" class="javax.swing.JComboBox" binding="cbIdioma">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="50" height="25"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="b7e94" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text resource-bundle="idioma" key="preferencias.autoguardado"/>
+        </properties>
+      </component>
+      <grid id="e18ed" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="979be" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <icon value="preferencias/autoguardado_si.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="e4994" class="javax.swing.JRadioButton" binding="rbAutoguardadoSi">
+            <constraints/>
+            <properties>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="3e394" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <icon value="preferencias/autoguardado_no.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="c674a" class="javax.swing.JRadioButton" binding="rbAutoguardadoNo">
+            <constraints/>
+            <properties>
+              <selected value="true"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="f26c9" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="0" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="5" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <orientation value="1"/>
+        </properties>
+      </component>
+      <grid id="89836" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="2">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="5" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="bcc9f" class="javax.swing.JButton" binding="btnAceptar">
+            <constraints/>
+            <properties>
+              <icon value="general/aceptar.png"/>
+              <text value=""/>
+              <toolTipText resource-bundle="idioma" key="general.aceptar"/>
+            </properties>
+          </component>
+          <component id="91804" class="javax.swing.JButton" binding="btnCancelar">
+            <constraints/>
+            <properties>
+              <icon value="general/cancelar.png"/>
+              <text value=""/>
+              <toolTipText resource-bundle="idioma" key="general.cancelar"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="grupoBotonesTema">
+      <member id="34ded"/>
+      <member id="8b944"/>
+    </group>
+    <group name="grupoBotonesAutoguardado">
+      <member id="e4994"/>
+      <member id="c674a"/>
+    </group>
+  </buttonGroups>
+</form>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="coffeetime.gui.otros.PantallaDeCarga">
+  <grid id="cbd77" binding="contentPane" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="48" y="54" width="436" height="297"/>
+    </constraints>
+    <properties>
+      <preferredSize width="250" height="300"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="2dff7" class="javax.swing.JProgressBar" binding="barraProgreso">
+        <constraints border-constraint="South"/>
+        <properties>
+          <stringPainted value="true"/>
+        </properties>
+      </component>
+      <component id="b8bf6" class="javax.swing.JLabel">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <icon value="general/logo.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

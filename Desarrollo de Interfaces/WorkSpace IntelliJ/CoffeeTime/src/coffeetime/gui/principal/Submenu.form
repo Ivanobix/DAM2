@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="coffeetime.gui.principal.Submenu">
+  <grid id="cbd77" binding="contentPane" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="48" y="54" width="688" height="297"/>
+    </constraints>
+    <properties>
+      <preferredSize width="900" height="480"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="20adf" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="77eec" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+            <constraints border-constraint="West"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="df5e8" class="javax.swing.JButton" binding="btnAnadir">
+                <constraints/>
+                <properties>
+                  <actionCommand value="btnAnadir"/>
+                  <defaultCapable value="true"/>
+                  <icon value="gestion/anadir.png"/>
+                  <text value=""/>
+                  <toolTipText resource-bundle="idioma" key="submenu.anadirElemento"/>
+                </properties>
+              </component>
+              <component id="ee01" class="javax.swing.JButton" binding="btnEliminar">
+                <constraints/>
+                <properties>
+                  <actionCommand value="btnEliminar"/>
+                  <icon value="gestion/eliminar.png"/>
+                  <text value=""/>
+                  <toolTipText resource-bundle="idioma" key="submenu.eliminarElemento"/>
+                </properties>
+              </component>
+              <component id="267d6" class="javax.swing.JButton" binding="btnModificar">
+                <constraints/>
+                <properties>
+                  <actionCommand value="btnModificar"/>
+                  <icon value="gestion/modificar.png"/>
+                  <text value=""/>
+                  <toolTipText resource-bundle="idioma" key="submenu.modificarElemento"/>
+                </properties>
+              </component>
+              <component id="d310" class="javax.swing.JButton" binding="btnMostrarInfoAdicional">
+                <constraints/>
+                <properties>
+                  <actionCommand value="btnMostrarInfoAdicional"/>
+                  <icon value="gestion/mostrar.png"/>
+                  <text value=""/>
+                  <toolTipText resource-bundle="idioma" key="submenu.visualizarInfoElemento"/>
+                </properties>
+              </component>
+              <component id="ec67c" class="javax.swing.JButton" binding="btnCambiarInforme">
+                <constraints/>
+                <properties>
+                  <actionCommand value="btnCambiarInforme"/>
+                  <icon value="gestion/cambiarDeInforme.png"/>
+                  <text value=""/>
+                  <toolTipText resource-bundle="idioma" key="submenu.visualizarInfoElemento"/>
+                  <visible value="false"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="f491b" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="2">
+            <constraints border-constraint="East"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="56c86" class="javax.swing.JComboBox" binding="cbFiltrado">
+                <constraints/>
+                <properties>
+                  <model/>
+                  <preferredSize width="150" height="25"/>
+                  <toolTipText resource-bundle="idioma" key="seleccionar.Filtrado"/>
+                </properties>
+              </component>
+              <component id="5eda3" class="javax.swing.JTextField" binding="txtFiltro">
+                <constraints/>
+                <properties>
+                  <preferredSize width="150" height="25"/>
+                  <toolTipText resource-bundle="idioma" key="seleccionar.establecerFiltro"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="3ab3f" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <tabbedpane id="86a78" binding="tabbedPane">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <toolTipText value=""/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="355f9" binding="pnListado" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title-resource-bundle="idioma" title-key="tabla.listado"/>
+                </constraints>
+                <properties>
+                  <toolTipText value=""/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <scrollpane id="2ac94">
+                    <constraints border-constraint="Center"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="bf2c7" class="javax.swing.JList" binding="listaElementos" custom-create="true">
+                        <constraints/>
+                        <properties/>
+                      </component>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
+              <grid id="c1bae" binding="pnEstadisticas" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title-resource-bundle="idioma" title-key="tabla.estadisticas"/>
+                </constraints>
+                <properties>
+                  <toolTipText value=""/>
+                </properties>
+                <border type="none"/>
+                <children/>
+              </grid>
+              <grid id="7debc" binding="pnInforme" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <tabbedpane title="Informe"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children/>
+              </grid>
+            </children>
+          </tabbedpane>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

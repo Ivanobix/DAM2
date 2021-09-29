@@ -1,0 +1,11 @@
+
+coffeetime.base
+coffeetime.componentes
+coffeetime.gui.gestion
+coffeetime.gui.login
+coffeetime.gui.otros
+coffeetime.gui.principal
+coffeetime.gui.usuarios
+coffeetime.gui.visualizado
+coffeetime.modelo
+coffeetime.util

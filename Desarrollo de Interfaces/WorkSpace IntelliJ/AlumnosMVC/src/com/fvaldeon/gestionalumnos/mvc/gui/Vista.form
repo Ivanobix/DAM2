@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.fvaldeon.gestionalumnos.mvc.gui.Vista">
+  <grid id="27dc6" binding="contentPane" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="637" height="446"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="757d7" binding="panelNorte" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="8ac0b" class="javax.swing.JButton" binding="abrirFicheroBtn">
+            <constraints/>
+            <properties>
+              <actionCommand value="Abrir"/>
+              <icon value="24x24/document-open-24.png"/>
+              <opaque value="false"/>
+              <preferredSize width="28" height="28"/>
+              <selectedIcon value="24x24/document-open-24.png"/>
+              <text value=""/>
+              <toolTipText resource-bundle="idiomaResourcebundle" key="vista.boton.cargar.tooltip"/>
+            </properties>
+          </component>
+          <component id="e4844" class="javax.swing.JButton" binding="guardarFicheroBtn">
+            <constraints/>
+            <properties>
+              <actionCommand value="Guardar"/>
+              <icon value="24x24/document-save-24.png"/>
+              <opaque value="false"/>
+              <preferredSize width="28" height="28"/>
+              <text value=""/>
+              <toolTipText resource-bundle="idiomaResourcebundle" key="vista.boton.guardar.tooltip"/>
+            </properties>
+          </component>
+          <component id="88d3" class="javax.swing.JButton" binding="settingsBtn">
+            <constraints/>
+            <properties>
+              <actionCommand value="Preferencias"/>
+              <icon value="24x24/system-settings.png"/>
+              <opaque value="false"/>
+              <preferredSize width="28" height="28"/>
+              <text value=""/>
+              <toolTipText resource-bundle="idiomaResourcebundle" key="vista.preferencias.tooltip"/>
+            </properties>
+          </component>
+          <component id="62d60" class="javax.swing.JButton" binding="gestionUsuariosBtn">
+            <constraints/>
+            <properties>
+              <actionCommand value="Usuarios"/>
+              <icon value="24x24/kgpg_identity.png"/>
+              <opaque value="false"/>
+              <preferredSize width="28" height="28"/>
+              <text value=""/>
+              <toolTipText resource-bundle="idiomaResourcebundle" key="vista.gestion.usuarios.tooltip"/>
+            </properties>
+          </component>
+          <component id="edf99" class="javax.swing.JButton" binding="dialogoRelacionesBtn">
+            <constraints/>
+            <properties>
+              <actionCommand value="MostrarRelaciones"/>
+              <icon value="24x24/klipper_dock.png"/>
+              <preferredSize width="28" height="28"/>
+              <text value=""/>
+              <toolTipText resource-bundle="idiomaResourcebundle" key="vista.boton.mostrar.relaciones"/>
+            </properties>
+          </component>
+          <component id="c6e73" class="javax.swing.JButton" binding="diagrama1Btn">
+            <constraints/>
+            <properties>
+              <actionCommand value="Diagrama1"/>
+              <icon value="24x24/office-chart-pie.png"/>
+              <preferredSize width="28" height="28"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="10aa8" class="javax.swing.JButton" binding="diagrama2Btn">
+            <constraints/>
+            <properties>
+              <actionCommand value="Diagrama2"/>
+              <icon value="24x24/office-chart-bar-24.png"/>
+              <preferredSize width="28" height="28"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="88f9b" class="javax.swing.JButton" binding="informe1Btn">
+            <constraints/>
+            <properties>
+              <actionCommand value="Informe1"/>
+              <icon value="24x24/jaspersoft_icon.png"/>
+              <preferredSize width="28" height="28"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <tabbedpane id="97f96" binding="tabbedPane1" default-binding="true">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="fdf81" layout-manager="FormLayout">
+            <rowspec value="center:d:noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:d:grow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:d:grow"/>
+            <colspec value="fill:d:noGrow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:d:grow"/>
+            <constraints>
+              <tabbedpane title-resource-bundle="idiomaResourcebundle" title-key="titulo.pestana.profesor"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="7971c" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <text resource-bundle="idiomaResourcebundle" key="campo.codigo.profesor"/>
+                </properties>
+              </component>
+              <component id="360eb" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <text resource-bundle="idiomaResourcebundle" key="label.nombre.profesor"/>
+                </properties>
+              </component>
+              <component id="d9edb" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <text resource-bundle="idiomaResourcebundle" key="vista.campo.apellidos"/>
+                </properties>
+              </component>
+              <component id="863e" class="javax.swing.JTextField" binding="nombreProfesorTxt">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="c219d" class="javax.swing.JTextField" binding="apellidosProfesorTxt">
+                <constraints>
+                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <scrollpane id="8d4a7">
+                <constraints>
+                  <grid row="14" column="2" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="a0e01" class="javax.swing.JList" binding="listAlumnosProfesor">
+                    <constraints/>
+                    <properties>
+                      <selectionMode value="0"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <scrollpane id="94fb6">
+                <constraints>
+                  <grid row="6" column="2" row-span="5" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="9eafe" class="javax.swing.JList" binding="listProfesor">
+                    <constraints/>
+                    <properties>
+                      <selectionMode value="0"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <component id="a4965" class="javax.swing.JButton" binding="modificarProfesorBtn">
+                <constraints>
+                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="ModificarProfesor"/>
+                  <icon value="24x24/user-properties.png"/>
+                  <preferredSize width="30" height="30"/>
+                  <text value=""/>
+                  <toolTipText resource-bundle="idiomaResourcebundle" key="vista.profesores.modificar.tooltip"/>
+                </properties>
+              </component>
+              <component id="6e199" class="javax.swing.JButton" binding="nuevoProfesorBtn">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="NuevoProfesor"/>
+                  <icon value="24x24/user-new-3.png"/>
+                  <preferredSize width="30" height="30"/>
+                  <text value=""/>
+                  <toolTipText resource-bundle="idiomaResourcebundle" key="vista.boton.nuevo.profesor.tooltip"/>
+                </properties>
+              </component>
+              <component id="b5339" class="javax.swing.JButton" binding="eliminarProfesorBtn">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="EliminarProfesor"/>
+                  <icon value="24x24/user-delete-2.png"/>
+                  <preferredSize width="30" height="30"/>
+                  <text value=""/>
+                  <toolTipText resource-bundle="idiomaResourcebundle" key="vista.profesores.eliminar.profesor.tooltip"/>
+                </properties>
+              </component>
+              <component id="70e0b" class="javax.swing.JTextField" binding="codigoProfesorTxt">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties>
+                  <toolTipText value="Código único que identifica al profesor"/>
+                </properties>
+              </component>
+              <component id="d5e1e" class="javax.swing.JButton" binding="matricularAlumnosProfesorBtn">
+                <constraints>
+                  <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="MatricularAlumnos"/>
+                  <icon value="24x24/user-group-new-2.png"/>
+                  <preferredSize width="30" height="30"/>
+                  <text value=""/>
+                  <toolTipText resource-bundle="idiomaResourcebundle" key="vista.matricular.alumnos.btn"/>
+                </properties>
+              </component>
+              <component id="44126" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <text resource-bundle="idiomaResourcebundle" key="vista.profesor.alumnos"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="5584" layout-manager="FormLayout">
+            <rowspec value="center:d:noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:d:grow"/>
+            <colspec value="fill:d:noGrow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:d:grow"/>
+            <constraints>
+              <tabbedpane title-resource-bundle="idiomaResourcebundle" title-key="vista.tab.alumno"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="40261" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <text value="Dni:"/>
+                </properties>
+              </component>
+              <component id="6568b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <text value="Nombre:"/>
+                </properties>
+              </component>
+              <component id="8708e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <text value="Apellidos:"/>
+                </properties>
+              </component>
+              <component id="1f9ee" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <text value="Fecha de nacimiento:"/>
+                </properties>
+              </component>
+              <component id="a7ce9" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <text value="Foto:"/>
+                </properties>
+              </component>
+              <component id="b2a02" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <text value="Profesor:"/>
+                </properties>
+              </component>
+              <component id="dcaf7" class="javax.swing.JTextField" binding="dniAlumnoTxt">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="a6ce9" class="javax.swing.JTextField" binding="nombreAlumnoTxt">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="1bf59" class="javax.swing.JTextField" binding="apellidosAlumnoTxt">
+                <constraints>
+                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="deea6" class="com.github.lgooddatepicker.components.DatePicker" binding="alumnoDatePicker">
+                <constraints>
+                  <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <minimumSize width="187" height="24"/>
+                  <preferredSize width="187" height="24"/>
+                </properties>
+              </component>
+              <grid id="53a6c" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="9ac35" class="javax.swing.JLabel" binding="fotoAlumnoLbl">
+                    <constraints border-constraint="East"/>
+                    <properties>
+                      <maximumSize width="60" height="60"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="75873" class="javax.swing.JButton" binding="seleccionarFotoAlumnoBtn">
+                    <constraints border-constraint="West"/>
+                    <properties>
+                      <actionCommand value="SeleccionarFoto"/>
+                      <icon value="24x24/insert-image-3.png"/>
+                      <label value=""/>
+                      <preferredSize width="30" height="30"/>
+                      <text value=""/>
+                      <toolTipText resource-bundle="idiomaResourcebundle" key="vista.boton.seleccion.foto.alumno.tooltip"/>
+                    </properties>
+                  </component>
+                  <component id="a24fa" class="javax.swing.JButton" binding="eliminarFotoAlumnoBtn">
+                    <constraints border-constraint="Center"/>
+                    <properties>
+                      <actionCommand value="EliminarFoto"/>
+                      <text value="Eliminar Foto"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <component id="e570f" class="javax.swing.JComboBox" binding="profesorDeAlumnoCb">
+                <constraints>
+                  <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties/>
+              </component>
+              <scrollpane id="2d26c">
+                <constraints>
+                  <grid row="12" column="2" row-span="5" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="49022" class="javax.swing.JList" binding="listAlumnos">
+                    <constraints/>
+                    <properties>
+                      <selectionMode value="0"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <component id="59dbe" class="javax.swing.JButton" binding="modificarAlumnoBtn">
+                <constraints>
+                  <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="ModificarAlumno"/>
+                  <icon value="24x24/user-properties.png"/>
+                  <preferredSize width="30" height="30"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="cccd8" class="javax.swing.JButton" binding="nuevoAlumnoBtn">
+                <constraints>
+                  <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="NuevoAlumno"/>
+                  <icon value="24x24/user-new-3.png"/>
+                  <preferredSize width="30" height="30"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="4bc76" class="javax.swing.JButton" binding="eliminarAlumnoBtn">
+                <constraints>
+                  <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="EliminarAlumno"/>
+                  <icon value="24x24/user-delete-2.png"/>
+                  <preferredSize width="30" height="30"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+      <grid id="22413" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="21b8f" class="barraestado.BarraEstado" binding="barraEstado">
+            <constraints border-constraint="North"/>
+            <properties>
+              <preferredSize width="-1" height="24"/>
+            </properties>
+          </component>
+          <component id="f92d7" class="javax.swing.JLabel">
+            <constraints border-constraint="South"/>
+            <properties>
+              <foreground color="-8605945"/>
+              <horizontalAlignment value="0"/>
+              <text value="FerSoft 2021"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="coffeetime.gui.usuarios.CreacionUsuarios">
+  <grid id="cbd77" binding="contentPane" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="48" y="54" width="436" height="164"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="974f7" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="10" right="0"/>
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="8cd47" class="javax.swing.JButton" binding="btnAceptar">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="general/aceptar.png"/>
+              <text value=""/>
+              <toolTipText resource-bundle="idioma" key="general.aceptar"/>
+            </properties>
+          </component>
+          <component id="18bea" class="javax.swing.JButton" binding="btnCancelar">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalTextPosition value="10"/>
+              <icon value="general/cancelar.png"/>
+              <text value=""/>
+              <toolTipText resource-bundle="idioma" key="general.cancelar"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="79d07" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="10" left="30" bottom="0" right="30"/>
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="89cc7" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text resource-bundle="idioma" key="login.usuario"/>
+            </properties>
+          </component>
+          <component id="18ea1" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text resource-bundle="idioma" key="login.contrasena"/>
+            </properties>
+          </component>
+          <component id="28f46" class="javax.swing.JPasswordField" binding="txtContrasena">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="25"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="f3037" class="javax.swing.JTextField" binding="txtUsuario">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="25"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="36e5c" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text resource-bundle="idioma" key="login.privilegios"/>
+            </properties>
+          </component>
+          <grid id="20549" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="b91fb" class="javax.swing.JRadioButton" binding="rbAdmin">
+                <constraints/>
+                <properties>
+                  <text resource-bundle="idioma" key="login.admin"/>
+                </properties>
+              </component>
+              <component id="c6430" class="javax.swing.JRadioButton" binding="rbNormal">
+                <constraints/>
+                <properties>
+                  <selected value="true"/>
+                  <text resource-bundle="idioma" key="login.normal"/>
+                </properties>
+              </component>
+              <component id="3488d" class="javax.swing.JRadioButton" binding="rbInvitado">
+                <constraints/>
+                <properties>
+                  <text resource-bundle="idioma" key="login.basico"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="grupoPrivilegios">
+      <member id="b91fb"/>
+      <member id="c6430"/>
+      <member id="3488d"/>
+    </group>
+  </buttonGroups>
+</form>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Servidor">
+  <grid id="27dc6" binding="contentPane" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <preferredSize width="200" height="200"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="f2409" class="javax.swing.JLabel">
+        <constraints border-constraint="North"/>
+        <properties>
+          <horizontalAlignment value="0"/>
+          <text value="SERVIDOR"/>
+        </properties>
+      </component>
+      <component id="9847f" class="javax.swing.JButton" binding="btnEnviar">
+        <constraints border-constraint="South"/>
+        <properties>
+          <actionCommand value="enviar"/>
+          <text value="Enviar"/>
+        </properties>
+      </component>
+      <component id="1397a" class="javax.swing.JTextArea" binding="txtConsola">
+        <constraints border-constraint="Center"/>
+        <properties/>
+      </component>
+    </children>
+  </grid>
+</form>
