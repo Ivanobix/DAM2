@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjustesActivity">
+
+    <com.flask.colorpicker.ColorPickerView
+        android:id="@+id/cpColorTexto"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        app:alphaSlider="true"
+        app:alphaSliderView="@+id/v_alpha_slider"
+        app:density="12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblColorDeTexto"
+        app:lightnessSlider="true"
+        app:lightnessSliderView="@+id/v_lightness_slider"
+        app:wheelType="FLOWER" />
+
+    <com.flask.colorpicker.ColorPickerView
+        android:id="@+id/cpColorFondo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        app:alphaSlider="true"
+        app:alphaSliderView="@+id/v_alpha_slider"
+        app:density="12"
+        app:layout_constraintBottom_toBottomOf="@+id/cpColorTexto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/cpColorTexto"
+        app:layout_constraintTop_toTopOf="@+id/cpColorTexto"
+        app:lightnessSlider="true"
+        app:lightnessSliderView="@+id/v_lightness_slider"
+        app:wheelType="FLOWER" />
+
+    <TextView
+        android:id="@+id/lblPreferencias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Preferencias:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cbPreferencias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/lblPreferencias"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lblPreferencias" />
+
+    <EditText
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Titulo"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/lblPreferencias"
+        app:layout_constraintTop_toBottomOf="@+id/lblPreferencias" />
+
+    <TextView
+        android:id="@+id/lblColorDeTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Color De Texto"
+        app:layout_constraintEnd_toEndOf="@+id/cpColorTexto"
+        app:layout_constraintStart_toStartOf="@+id/cpColorTexto"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <TextView
+        android:id="@+id/lblColorDeFondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color De Fondo"
+        app:layout_constraintEnd_toEndOf="@+id/cpColorFondo"
+        app:layout_constraintStart_toStartOf="@+id/cpColorFondo"
+        app:layout_constraintTop_toTopOf="@+id/lblColorDeTexto" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clVistaPrevia"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblVistaPrevia">
+
+        <TextView
+            android:id="@+id/lblTituloVistaPrevia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="SHARED PREFERENCES"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/lblVistaPrevia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Vista Previa"
+        app:layout_constraintEnd_toEndOf="@+id/cpColorFondo"
+        app:layout_constraintStart_toStartOf="@+id/cpColorTexto"
+        app:layout_constraintTop_toBottomOf="@+id/cpColorTexto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

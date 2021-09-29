@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/opcAdoptar"
+        android:title="Adoptar" />
+    <item
+        android:id="@+id/opcAcoger"
+        android:title="Acoger" />
+</menu>

@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/opcBorrar"
+        android:title="Borrar" />
+    <item
+        android:id="@+id/opcEscribir"
+        android:title="Mostrar" />
+</menu>

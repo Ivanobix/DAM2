@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="address">Richtung:</string>
+    <string name="last_name">Nachname:</string>
+    <string name="name">Name:</string>
+    <string name="birthday">Geburtsdatum:</string>
+    <string name="phone">Mobiltelefon:</string>
+    <string name="course">Kurs:</string>
+</resources>

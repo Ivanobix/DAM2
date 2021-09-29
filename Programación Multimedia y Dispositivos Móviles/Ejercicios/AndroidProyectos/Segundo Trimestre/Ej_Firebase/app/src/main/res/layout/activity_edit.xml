@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_add_scene"
+    tools:context=".AddActivity">
+
+    <TextView
+        android:id="@+id/lblTitulo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Editar Contacto"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNombre2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Nombre:"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblTitulo2" />
+
+    <EditText
+        android:id="@+id/txtApellido2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Apellidos:"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/txtNombre2"
+        app:layout_constraintStart_toStartOf="@+id/txtNombre2"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre2" />
+
+    <EditText
+        android:id="@+id/txtTelefono2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Telefono:"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/txtApellido2"
+        app:layout_constraintStart_toStartOf="@+id/txtApellido2"
+        app:layout_constraintTop_toBottomOf="@+id/txtApellido2" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Eliminar"
+        app:layout_constraintEnd_toStartOf="@+id/btnModificar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTelefono2" />
+
+    <Button
+        android:id="@+id/btnModificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modificar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnEliminar"
+        app:layout_constraintTop_toTopOf="@+id/btnEliminar" />
+
+    <Button
+        android:id="@+id/btnCancelar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEliminar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

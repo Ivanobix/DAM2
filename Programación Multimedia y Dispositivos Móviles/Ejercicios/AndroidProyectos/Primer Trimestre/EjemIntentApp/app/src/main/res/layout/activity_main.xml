@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnAjustes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajustes"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalendario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCalendario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calendario"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalculadora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAjustes" />
+
+    <Button
+        android:id="@+id/btnCalculadora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora"
+        app:layout_constraintBottom_toTopOf="@+id/btnCamara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalendario" />
+
+    <Button
+        android:id="@+id/btnCamara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camara"
+        app:layout_constraintBottom_toTopOf="@+id/btnTelefono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculadora" />
+
+    <Button
+        android:id="@+id/btnTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefono"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCamara" />
+</androidx.constraintlayout.widget.ConstraintLayout>

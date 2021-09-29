@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".SettingsActivity">
+
+        <View
+            android:id="@+id/divisor2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <TextView
+            android:id="@+id/lblNotificaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Notificaciones"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divisor3" />
+
+        <View
+            android:id="@+id/divisor3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtEdad" />
+
+        <TextView
+            android:id="@+id/lblTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="CONFIGURACIONES"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divisor1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblTitulo" />
+
+        <TextView
+            android:id="@+id/lblMedicion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Medición"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divisor1" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblMedicion">
+
+            <RadioButton
+                android:id="@+id/rbFahrenheit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fahrenheit (ºF)" />
+
+            <RadioButton
+                android:id="@+id/rbCelsius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Celsius (ºC)" />
+
+            <RadioButton
+                android:id="@+id/rbKelvin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kelvin (ºK)" />
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swAvisosTemperatura"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:checked="false"
+            android:text="Avisos de Temperatura"
+            app:layout_constraintStart_toStartOf="@+id/lblNotificaciones"
+            app:layout_constraintTop_toBottomOf="@+id/lblNotificaciones" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swAvisosExposicion"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="32dp"
+            android:checked="false"
+            android:text="Avisos de Exposición"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/swAvisosTemperatura" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swPersonalizacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Personalización"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/lblMedicion"
+            app:layout_constraintTop_toBottomOf="@+id/divisor2" />
+
+        <EditText
+            android:id="@+id/txtAltura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="auto"
+            android:hint="Altura (cm):"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/swPersonalizacion"
+            app:layout_constraintTop_toBottomOf="@+id/swPersonalizacion" />
+
+        <EditText
+            android:id="@+id/txtPeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="auto"
+            android:hint="Peso (kg):"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="@+id/txtAltura"
+            app:layout_constraintStart_toStartOf="@+id/txtAltura"
+            app:layout_constraintTop_toBottomOf="@+id/txtAltura" />
+
+        <EditText
+            android:id="@+id/txtEdad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="auto"
+            android:hint="Edad:"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/txtPeso"
+            app:layout_constraintStart_toStartOf="@+id/txtPeso"
+            app:layout_constraintTop_toBottomOf="@+id/txtPeso" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swHidratacion"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:checked="false"
+            android:text="Hidratación"
+            app:layout_constraintEnd_toEndOf="@+id/swAvisosExposicion"
+            app:layout_constraintStart_toStartOf="@+id/swAvisosTemperatura"
+            app:layout_constraintTop_toBottomOf="@+id/swAvisosTemperatura" />
+
+        <Button
+            android:id="@+id/btnAplicar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Aplicar"
+            app:layout_constraintStart_toStartOf="@+id/swAvisosTemperatura"
+            app:layout_constraintTop_toBottomOf="@+id/swHidratacion" />
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            app:layout_constraintEnd_toEndOf="@+id/swAvisosExposicion"
+            app:layout_constraintTop_toTopOf="@+id/btnAplicar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

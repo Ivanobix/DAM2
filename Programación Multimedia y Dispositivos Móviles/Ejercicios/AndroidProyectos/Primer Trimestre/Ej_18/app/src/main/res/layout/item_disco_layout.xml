@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardDisco"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <ImageView
+        android:id="@+id/imgPortada"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#A6000000"
+        android:fontFamily="@font/bad_script"
+        android:gravity="center"
+        android:text="Titulo"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lblAutor"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:background="#A6000000"
+        android:fontFamily="@font/bad_script"
+        android:gravity="center"
+        android:text="Autor"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondocompra"
+    tools:context=".ActivityCompraProducto">
+
+    <TextView
+        android:id="@+id/lblSaldoCompra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:drawableEnd="@drawable/icon_euro"
+        android:text="100.0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/lblUsuarioCompra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lblUsuarioCompra" />
+
+    <TextView
+        android:id="@+id/lblUsuarioCompra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:drawableStart="@drawable/icon_usuario"
+        android:text="Iván García"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgProducto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/lblUsuarioCompra"
+        app:layout_constraintTop_toBottomOf="@+id/lblUsuarioCompra"
+        app:srcCompat="@drawable/icon_deporte" />
+
+    <TextView
+        android:id="@+id/lblTipoEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="Deporte Nuevo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/lblSaldoCompra"
+        app:layout_constraintTop_toTopOf="@+id/imgProducto" />
+
+    <TextView
+        android:id="@+id/lblPrecioCompra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="35.00€"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgProducto"
+        app:layout_constraintEnd_toEndOf="@+id/lblTipoEstado"
+        app:layout_constraintStart_toStartOf="@+id/lblTipoEstado" />
+
+    <TextView
+        android:id="@+id/lblResumen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Chaquela running Nike\nIdeal para practicar deporte en tiempo de lluvia y viento"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPrecioCompra" />
+
+    <ImageButton
+        android:id="@+id/btnLlamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnComprarProducto"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblResumen"
+        app:srcCompat="@drawable/icon_phone2" />
+
+    <ImageButton
+        android:id="@+id/btnComprarProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/btnLlamar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnLlamar"
+        app:layout_constraintTop_toTopOf="@+id/btnLlamar"
+        app:srcCompat="@drawable/icono_comprar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

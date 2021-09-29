@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name" translatable="false">Ejercicio 9</string>
+    <string name="address">Address:</string>
+    <string name="last_name">Last Name:</string>
+    <string name="name">Name:</string>
+    <string name="birthday">Birthday:</string>
+    <string name="phone">Phone:</string>
+    <string name="email" translatable="false">Email:</string>
+    <string name="course">Course:</string>
+</resources>

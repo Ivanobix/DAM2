@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="user">Utilisateur</string>
+    <string name="username">Nom d\'utilisateur</string>
+    <string name="password" >Mot de passe</string>
+    <string name="enterPassword" >Mot de passe:</string>
+    <string name="cancel">Annuler</string>
+    <string name="accept">Accepter</string>
+    <string name="titulo">UTILISATEUR</string>
+</resources>

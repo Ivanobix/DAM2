@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.acme.ejer5_08.AddActivity">
+
+    <TextView
+        android:id="@+id/txtTituloAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Añadir Equipo"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:hint="Nombre Equipo"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloAdd" />
+
+    <EditText
+        android:id="@+id/editCiudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Ciudad"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editNombre"
+        app:layout_constraintStart_toStartOf="@+id/editNombre"
+        app:layout_constraintTop_toBottomOf="@+id/editNombre" />
+
+    <EditText
+        android:id="@+id/editConferencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Conferencia"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editCiudad"
+        app:layout_constraintStart_toStartOf="@+id/editCiudad"
+        app:layout_constraintTop_toBottomOf="@+id/editCiudad" />
+
+    <EditText
+        android:id="@+id/editDivision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Division"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editConferencia"
+        app:layout_constraintStart_toStartOf="@+id/editConferencia"
+        app:layout_constraintTop_toBottomOf="@+id/editConferencia" />
+
+    <Button
+        android:id="@+id/botInsertar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Insertar Equipo"
+        app:layout_constraintEnd_toEndOf="@+id/editDivision"
+        app:layout_constraintStart_toStartOf="@+id/editDivision"
+        app:layout_constraintTop_toBottomOf="@+id/editDivision" />
+</android.support.constraint.ConstraintLayout>

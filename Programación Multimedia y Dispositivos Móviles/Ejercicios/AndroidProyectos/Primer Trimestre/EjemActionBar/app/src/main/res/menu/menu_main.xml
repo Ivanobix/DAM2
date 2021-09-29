@@ -1,0 +1,66 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ejemactionbar.MainActivity">
+    <item
+        android:id="@+id/action_mail"
+        android:icon="@android:drawable/ic_menu_send"
+        android:orderInCategory="1"
+        android:title="Correo"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_calendar"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:orderInCategory="1"
+        android:title="Calendario"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:orderInCategory="100"
+        android:title="Ajustes"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_call"
+        android:icon="@android:drawable/ic_menu_call"
+        android:orderInCategory="1"
+        android:title="Teléfono"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_camera"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:orderInCategory="1"
+        android:title="Cámara"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_compass"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:orderInCategory="1"
+        android:title="Brújula"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_gallery"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:orderInCategory="1"
+        android:title="Galería"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_add"
+        android:icon="@android:drawable/ic_menu_add"
+        android:orderInCategory="1"
+        android:title="Nuevo"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_save"
+        android:icon="@android:drawable/ic_menu_save"
+        android:orderInCategory="1"
+        android:title="Guardar"
+        app:showAsAction="never" />
+</menu>

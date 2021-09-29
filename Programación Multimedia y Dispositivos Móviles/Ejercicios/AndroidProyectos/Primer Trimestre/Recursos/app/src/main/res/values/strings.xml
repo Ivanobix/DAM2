@@ -1,0 +1,10 @@
+<resources>
+    <string name="user">User</string>
+    <string name="username">Username:</string>
+    <string name="password" >Password</string>
+    <string name="enterPassword" >Password:</string>
+    <string name="cancel">Cancel</string>
+    <string name="accept">Accept</string>
+    <string name="app_name" translatable="false">Resources</string>
+    <string name="titulo">USER</string>
+</resources>

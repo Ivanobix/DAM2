@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ej_actionbar.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:orderInCategory="1"
+        android:title="Ajustes"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_calendar"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:orderInCategory="100"
+        android:title="Calendario"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_call"
+        android:icon="@android:drawable/ic_menu_call"
+        android:orderInCategory="100"
+        android:title="Teléfono"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_camera"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:orderInCategory="100"
+        android:title="Cámara"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_calculadora"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:orderInCategory="100"
+        android:title="Calculadora"
+        app:showAsAction="ifRoom" />
+</menu>
